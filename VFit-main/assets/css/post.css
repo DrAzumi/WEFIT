@@ -1,13 +1,16 @@
+* { margin: 0; padding: 0; }
+
 body {
   -webkit-font-smoothing: antialiased;
 }
 
 section {
-  background: #647df9;
-  color: #7a90ff;
-  padding: 2em 0 8em;
-  min-height: 100vh;
-  position: relative;
+  background-image:url(/VFit-main/assets/img/bg.jpg );
+  background-repeat: inherit;
+  color: #000000;
+  padding: 0;
+  min-height: fit-content;
+  max-height: fit-content;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -19,7 +22,7 @@ section {
   -webkit-justify-content: center;
   justify-content: center;
   width: 100%;
-  margin: 0 auto 3em;
+  margin: 0 auto 100em;
 }
 .pricing-item {
   position: relative;
@@ -43,14 +46,17 @@ section {
 }
 
 .pricing-feature-list {
-  text-align: left;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .pricing-palden .pricing-item {
   font-family: "Open Sans", sans-serif;
   cursor: default;
-  color: #84697c;
-  background: #fff;
+  color: #bd84e9;
+  background: rgba(134, 119, 192, 0.99);
   box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
   border-radius: 20px 20px 10px 10px;
   margin: 1em;
@@ -58,19 +64,19 @@ section {
 
 @media screen and (min-width: 66.25em) {
   .pricing-palden .pricing-item {
-    margin: 1em -0.5em;
+    margin: 1em 5em;
   }
 
   .pricing-palden .pricing__item--featured {
-    margin: 0;
-    z-index: 10;
+    margin: 50;
+    z-index: 10%;
     box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
   }
 }
 .pricing-palden .pricing-deco {
   border-radius: 10px 10px 0 0;
   background: rgba(76, 70, 101, 0.99);
-  padding: 4em 0 9em;
+  padding: 3em;
   position: relative;
 }
 .pricing-palden .pricing-deco-img {
@@ -80,7 +86,7 @@ section {
   width: 100%;
   height: 160px;
 }
-.pricing-palden .pricing-title {
+/* .pricing-palden .pricing-title {
   font-size: 0.75em;
   margin: 0;
   text-transform: uppercase;
@@ -90,28 +96,28 @@ section {
 .pricing-palden .deco-layer {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-}
-.pricing-palden .pricing-item:hover .deco-layer--1 {
+} */
+/* .pricing-palden .pricing-item:hover .deco-layer--1 {
   -webkit-transform: translate3d(15px, 0, 0);
   transform: translate3d(15px, 0, 0);
 }
 .pricing-palden .pricing-item:hover .deco-layer--2 {
   -webkit-transform: translate3d(-15px, 0, 0);
   transform: translate3d(-15px, 0, 0);
-}
+} */
 .pricing-palden .icon {
   font-size: 2.5em;
 }
 .pricing-palden .pricing-price {
   font-size: 5em;
-  font-weight: bold;
+  font-weight: semi-bold;
   padding: 0;
-  color: #fff;
-  margin: 0 0 0.25em 0;
-  line-height: 0.75;
+  color: #ffffff;
+  margin: 0 0 0em 0;
+  line-height: 5px;
 }
 .pricing-palden .pricing-currency {
-  font-size: 0.15em;
+  font-size: 1em;
   vertical-align: top;
 }
 .pricing-palden .pricing-period {
@@ -135,17 +141,17 @@ section {
 }
 .pricing-palden .pricing-action {
   font-weight: bold;
-  margin: auto 3em 2em 3em;
+  margin-bottom: 3em;
   padding: 1em 2em;
   color: #fff;
   border-radius: 30px;
-  background: #4d4766;
+
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.pricing-palden .pricing-action:hover, .pricing-palden .pricing-action:focus {
+/* .pricing-palden .pricing-action:hover, .pricing-palden .pricing-action:focus {
   background-color: #100A13;
-}
+} */
 
 .pricing-palden .pricing-item--featured .pricing-deco {
   padding: 5em 0 8.885em 0;
